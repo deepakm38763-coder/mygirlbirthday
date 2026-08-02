@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAPPY BIRTHDAY MY GIRL ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#ff5f9e,#ff9a9e,#fad0c4);
+overflow-x:hidden;
+color:white;
+text-align:center;
+}
+
+section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:20px;
+}
+
+h1{
+font-size:60px;
+animation:zoom 2s infinite alternate;
+}
+
+@keyframes zoom{
+from{transform:scale(1);}
+to{transform:scale(1.08);}
+}
+
+h2{
+margin:20px;
+font-size:35px;
+}
+
+p{
+max-width:800px;
+font-size:20px;
+line-height:35px;
+}
+
+button{
+padding:15px 35px;
+font-size:20px;
+border:none;
+border-radius:50px;
+background:white;
+color:#ff0066;
+cursor:pointer;
+margin:20px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+width:90%;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.4);
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+video{
+width:80%;
+max-width:700px;
+border-radius:15px;
+box-shadow:0 10px 30px black;
+}
+
+.heart{
+position:fixed;
+bottom:-30px;
+color:red;
+font-size:30px;
+animation:float linear infinite;
+pointer-events:none;
+}
+
+@keyframes float{
+to{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+#timer{
+font-size:30px;
+margin-top:20px;
+font-weight:bold;
+}
+
+footer{
+padding:30px;
+font-size:22px;
+background:#d6005b;
+}
+</style>
+
+</head>
+
+<body>
+
+<section>
+
+<h1>🎂 Happy Birthday My GIRL ❤️</h1>
+
+<h2>My Princess 👑</h2>
+
+<p>
+Happy Birthday to the most beautiful girl in my life.
+
+You are my happiness...
+You are my smile...
+You are my everything...
+
+No matter what happens,
+I will always love you forever.
+
+❤️ I Love You ❤️
+</p>
+<audio id="song" loop>
+  <source src="c:\Users\ELCOT\Downloads\obito_files\WhatsApp Audio 2026-08-01 at 11.42.52 PM.mpeg" type="audio/mpeg">
+</audio>
+
+<button onclick="playMusic()">🎵 Play Music</button>
+<button onclick="pauseMusic()">⏸ Pause</button>
+
+<script>
+function playMusic(){
+  document.getElementById("song").play();
+}
+
+function pauseMusic(){
+  document.getElementById("song").pause();
+}
+</script>
+
+
+<div id="timer"></div>
+
+</section>
+
+<section>
+
+<h2>📸 MINI GIRL</h2>
+
+<div class="gallery">
+
+<img src="c:\Users\ELCOT\Downloads\obito_files\WhatsApp Image 2026-08-01 at 11.13.00 PM.jpeg">
+<img src="c:\Users\ELCOT\Downloads\obito_files\WhatsApp Image 2026-08-01 at 11.13.02 PM.jpeg">
+<img src="c:\Users\ELCOT\Desktop\WhatsApp Image 2026-08-01 at 11.30.27 PM (1) - Copy.jpeg">
+<img src="c:\Users\ELCOT\Desktop\WhatsApp Image 2026-08-01 at 11.30.26 PM.jpeg">
+<img src="c:\Users\ELCOT\Desktop\WhatsApp Image 2026-08-01 at 11.30.27 PM (1).jpeg">
+<img src="c:\Users\ELCOT\Desktop\WhatsApp Image 2026-08-01 at 11.30.28 PM (1).jpeg">
+<img src="c:\Users\ELCOT\Downloads\obito_files\WhatsApp Image 2026-08-01 at 11.13.01 PM.jpeg">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>🎥 Special Video For You</h2>
+
+<video controls>
+
+<source src="c:\Users\ELCOT\Downloads\obito_files\WhatsApp Video 2026-08-01 at 11.13.00 PM.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+<section>
+
+<h2>💌 A Letter For You</h2>
+
+<p>
+
+Every day with you feels like a beautiful dream.
+
+Thank you for bringing love into my life.
+
+Your smile gives me strength.
+
+Your eyes are my favorite place.
+
+Your heart is my home.
+
+On this special birthday,
+
+I wish all your dreams come true.
+
+May God bless you with happiness,
+
+good health,
+
+success,
+
+and endless smiles.
+
+Happy Birthday My Queen.
+
+Forever Yours ❤️
+
+</p>
+
+</section>
+
+<footer>
+
+Made with ❤️ only for You
+
+</footer>
+
+<audio id="song" loop>
+
+<source src="https://youtube.com/shorts/Lhhk3Vsk6Hw?si=O9H2GMrrq23-OcT9" type="audio/mpeg">
+
+</audio>
+
+<script>
+
+function playMusic(){
+
+document.getElementById("song").play();
+
+}
+
+function pauseMusic(){
+
+document.getElementById("song").pause();
+
+}
+
+setInterval(()=>{
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(20+Math.random()*30)+"px";
+
+heart.style.animationDuration=(3+Math.random()*4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},7000);
+
+},300);
+
+const startDate=new Date("2024-01-01");
+
+function updateTimer(){
+
+const now=new Date();
+
+const diff=now-startDate;
+
+const days=Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("timer").innerHTML=
+"❤️ Together for "+days+" Days ❤️";
+
+}
+
+updateTimer();
+
+setInterval(updateTimer,1000);
+
+</script>
+
+</body>
+</html>
